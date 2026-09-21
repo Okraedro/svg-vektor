@@ -1,0 +1,258 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <linearGradient id="bgG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F4F7FA"/>
+      <stop offset="1" stop-color="#DDE5ED"/>
+    </linearGradient>
+    <radialGradient id="bgGlow" cx="0.5" cy="0.45" r="0.55">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bodyG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#C3CCD6"/>
+      <stop offset="0.35" stop-color="#E8EDF2"/>
+      <stop offset="0.7" stop-color="#D5DCE4"/>
+      <stop offset="1" stop-color="#ADB8C4"/>
+    </linearGradient>
+    <linearGradient id="sideG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#87939F"/>
+      <stop offset="1" stop-color="#A6B1BC"/>
+    </linearGradient>
+    <linearGradient id="topG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F4F7FA"/>
+      <stop offset="1" stop-color="#C9D2DB"/>
+    </linearGradient>
+    <linearGradient id="doorG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#DFE5EB"/>
+      <stop offset="1" stop-color="#C4CDD7"/>
+    </linearGradient>
+    <linearGradient id="panelG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#B6C0CB"/>
+      <stop offset="0.5" stop-color="#DDE3E9"/>
+      <stop offset="1" stop-color="#AEB9C4"/>
+    </linearGradient>
+    <linearGradient id="acG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FDFDFE"/>
+      <stop offset="1" stop-color="#C9D2DB"/>
+    </linearGradient>
+    <linearGradient id="acSideG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#98A4B0"/>
+      <stop offset="1" stop-color="#B4BEC8"/>
+    </linearGradient>
+    <linearGradient id="glassG" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#BFE0EF"/>
+      <stop offset="0.5" stop-color="#E9F5FB"/>
+      <stop offset="1" stop-color="#9CCBE0"/>
+    </linearGradient>
+    <linearGradient id="hazardG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#F5B70A"/>
+      <stop offset="1" stop-color="#E0A305"/>
+    </linearGradient>
+    <filter id="softShadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+    <pattern id="hazardPat" x="0" y="0" width="60" height="34" patternUnits="userSpaceOnUse" patternTransform="rotate(-14)">
+      <rect x="0" y="0" width="30" height="34" fill="#24313F"/>
+      <rect x="30" y="0" width="30" height="34" fill="#F5B70A"/>
+    </pattern>
+    <clipPath id="plinthClip">
+      <path d="M316 590 L912 590 L1012 515 L1012 547 L912 622 L316 622 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Фон -->
+  <rect width="1200" height="800" fill="url(#bgG)"/>
+  <rect width="1200" height="800" fill="url(#bgGlow)"/>
+
+  <!-- Декоративная сетка пола -->
+  <g stroke="#B9C4CE" stroke-opacity="0.35" stroke-width="1">
+    <line x1="0" y1="660" x2="1200" y2="660"/>
+    <line x1="0" y1="700" x2="1200" y2="700" stroke-opacity="0.18"/>
+    <line x1="0" y1="740" x2="1200" y2="740" stroke-opacity="0.12"/>
+    <line x1="100" y1="660" x2="40" y2="800" stroke-opacity="0.14"/>
+    <line x1="320" y1="660" x2="300" y2="800" stroke-opacity="0.14"/>
+    <line x1="540" y1="660" x2="560" y2="800" stroke-opacity="0.14"/>
+    <line x1="760" y1="660" x2="820" y2="800" stroke-opacity="0.14"/>
+    <line x1="980" y1="660" x2="1080" y2="800" stroke-opacity="0.14"/>
+  </g>
+
+  <!-- Декоративные круги -->
+  <circle cx="1010" cy="230" r="170" fill="none" stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="2"/>
+  <circle cx="1010" cy="230" r="140" fill="none" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="1"/>
+  <circle cx="210" cy="210" r="90" fill="none" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="2"/>
+  <circle cx="210" cy="210" r="70" fill="none" stroke="#FFFFFF" stroke-opacity="0.25" stroke-width="1"/>
+
+  <!-- Тень под контейнером -->
+  <ellipse cx="660" cy="648" rx="430" ry="52" fill="#26323F" opacity="0.18" filter="url(#softShadow)"/>
+  <ellipse cx="660" cy="648" rx="340" ry="36" fill="#26323F" opacity="0.15" filter="url(#softShadow)"/>
+
+  <!-- Опорные полозья -->
+  <rect x="336" y="622" width="250" height="22" rx="6" fill="#5C6B7A"/>
+  <rect x="640" y="622" width="252" height="22" rx="6" fill="#5C6B7A"/>
+  <polygon points="890,622 990,548 990,572 892,644" fill="#48576A"/>
+  <rect x="336" y="640" width="250" height="5" rx="2.5" fill="#3A4958"/>
+  <rect x="640" y="640" width="252" height="5" rx="2.5" fill="#3A4958"/>
+
+  <!-- Плинтус (цоколь) с сигнальной полосой -->
+  <path d="M316 590 L912 590 L1012 515 L1012 547 L912 622 L316 622 Z" fill="url(#sideG)"/>
+  <g clip-path="url(#plinthClip)">
+    <rect x="300" y="566" width="760" height="70" fill="url(#hazardPat)" opacity="0.95"/>
+  </g>
+  <path d="M316 590 L912 590 L1012 515 L1012 522 L912 597 L316 597 Z" fill="#F5B70A" opacity="0.9"/>
+  <path d="M316 590 L912 590" stroke="#FFFFFF" stroke-opacity="0.5" stroke-width="2"/>
+
+  <!-- Боковая грань контейнера -->
+  <polygon points="900,300 1000,225 1000,515 900,590" fill="url(#sideG)"/>
+  <!-- Кабелепровод на боковой грани -->
+  <rect x="944" y="258" width="40" height="210" rx="8" fill="#3A4958"/>
+  <rect x="944" y="258" width="18" height="210" fill="#4A5A6C"/>
+  <g fill="#8FA0B1">
+    <circle cx="964" cy="285" r="4"/>
+    <circle cx="964" cy="330" r="4"/>
+    <circle cx="964" cy="375" r="4"/>
+    <circle cx="964" cy="420" r="4"/>
+  </g>
+  <!-- Кабель, выходящий из ввода -->
+  <path d="M964 470 C 964 520, 1035 525, 1035 570 C 1035 610, 1005 632, 1005 660" fill="none" stroke="#2E3B4A" stroke-width="11" stroke-linecap="round"/>
+  <path d="M964 470 C 964 520, 1035 525, 1035 570 C 1035 610, 1005 632, 1005 660" fill="none" stroke="#4A5A6C" stroke-width="4" stroke-dasharray="10 14" stroke-linecap="round"/>
+  <rect x="940" y="452" width="48" height="40" rx="6" fill="#24313F"/>
+  <circle cx="964" cy="472" r="9" fill="#101820"/>
+
+  <!-- Верхняя грань контейнера -->
+  <polygon points="330,300 900,300 1000,225 430,225" fill="url(#topG)"/>
+  <polygon points="330,300 900,300" fill="none" stroke="#FFFFFF" stroke-opacity="0.6" stroke-width="2"/>
+
+  <!-- Такелажные петли -->
+  <g fill="#4A5A6C">
+    <path d="M352 288 h20 v14 h-8 v-6 h-4 v6 h-8 z"/>
+    <path d="M878 288 h20 v14 h-8 v-6 h-4 v6 h-8 z"/>
+    <path d="M452 213 h20 v14 h-8 v-6 h-4 v6 h-8 z"/>
+    <path d="M948 213 h20 v14 h-8 v-6 h-4 v6 h-8 z"/>
+  </g>
+
+  <!-- Кондиционер A -->
+  <g>
+    <polygon points="455,258 595,258 625,234 485,234" fill="#B4BEC8"/>
+    <polygon points="455,258 485,234 485,274 455,298" fill="url(#acSideG)"/>
+    <rect x="455" y="258" width="140" height="44" rx="6" fill="url(#acG)"/>
+    <rect x="455" y="258" width="140" height="44" rx="6" fill="none" stroke="#8FA0B1" stroke-width="2"/>
+    <!-- Вентилятор -->
+    <circle cx="505" cy="280" r="16" fill="#E8EDF2" stroke="#8FA0B1" stroke-width="2"/>
+    <circle cx="505" cy="280" r="5" fill="#8FA0B1"/>
+    <g stroke="#AEBAC6" stroke-width="2">
+      <line x1="505" y1="266" x2="505" y2="294"/>
+      <line x1="491" y1="280" x2="519" y2="280"/>
+      <line x1="495" y1="270" x2="515" y2="290"/>
+      <line x1="515" y1="270" x2="495" y2="290"/>
+    </g>
+    <rect x="545" y="268" width="34" height="24" rx="4" fill="#F2B705"/>
+    <path d="M549 276 h26 M549 284 h26" stroke="#C45500" stroke-width="2"/>
+    <path d="M595 258 l-14 14 M601 258 l-14 14" stroke="#5C6B7A" stroke-width="3"/>
+  </g>
+
+  <!-- Кондиционер B -->
+  <g>
+    <polygon points="705,240 820,240 845,222 730,222" fill="#B4BEC8"/>
+    <polygon points="705,240 730,222 730,258 705,276" fill="url(#acSideG)"/>
+    <rect x="705" y="240" width="115" height="36" rx="6" fill="url(#acG)"/>
+    <rect x="705" y="240" width="115" height="36" rx="6" fill="none" stroke="#8FA0B1" stroke-width="2"/>
+    <circle cx="744" cy="258" r="13" fill="#E8EDF2" stroke="#8FA0B1" stroke-width="2"/>
+    <circle cx="744" cy="258" r="4" fill="#8FA0B1"/>
+    <g stroke="#AEBAC6" stroke-width="2">
+      <line x1="744" y1="247" x2="744" y2="269"/>
+      <line x1="733" y1="258" x2="755" y2="258"/>
+      <line x1="736" y1="250" x2="752" y2="266"/>
+      <line x1="752" y1="250" x2="736" y2="266"/>
+    </g>
+    <rect x="776" y="250" width="30" height="16" rx="3" fill="#F2B705"/>
+    <path d="M779 256 h24" stroke="#C45500" stroke-width="2"/>
+  </g>
+  <!-- Трубопровод между кондиционерами -->
+  <path d="M625 240 C 660 246, 680 232, 710 228" fill="none" stroke="#5C6B7A" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Лицевая грань контейнера -->
+  <rect x="330" y="300" width="570" height="290" fill="url(#bodyG)"/>
+  <rect x="330" y="300" width="570" height="290" fill="none" stroke="#9AA6B2" stroke-width="2"/>
+
+  <!-- Сварные швы/панели -->
+  <g stroke="#9AA6B2" stroke-width="2">
+    <line x1="330" y1="318" x2="900" y2="318"/>
+    <line x1="330" y1="352" x2="900" y2="352"/>
+    <line x1="634" y1="300" x2="634" y2="590"/>
+    <line x1="650" y1="300" x2="650" y2="590"/>
+  </g>
+
+  <!-- Дверь с жалюзи -->
+  <rect x="366" y="336" width="252" height="240" rx="4" fill="url(#doorG)"/>
+  <rect x="366" y="336" width="252" height="240" rx="4" fill="none" stroke="#9AA6B2" stroke-width="2"/>
+  <!-- Жалюзи вентиляции -->
+  <g fill="#AEB9C4" stroke="#8B97A3" stroke-width="1.5">
+    <rect x="382" y="352" width="220" height="10" rx="5"/>
+    <rect x="382" y="374" width="220" height="10" rx="5"/>
+    <rect x="382" y="396" width="220" height="10" rx="5"/>
+    <rect x="382" y="418" width="220" height="10" rx="5"/>
+    <rect x="382" y="440" width="220" height="10" rx="5"/>
+  </g>
+  <!-- Ручка двери -->
+  <rect x="600" y="420" width="12" height="110" rx="6" fill="#3A4958"/>
+  <rect x="602" y="424" width="4" height="102" rx="2" fill="#54667A"/>
+  <!-- Петли -->
+  <g fill="#8B97A3">
+    <rect x="360" y="380" width="10" height="26" rx="3"/>
+    <rect x="360" y="540" width="10" height="26" rx="3"/>
+  </g>
+
+  <!-- Смотровое окно -->
+  <rect x="428" y="352" width="108" height="70" rx="8" fill="#24313F"/>
+  <rect x="436" y="360" width="92" height="54" rx="5" fill="url(#glassG)"/>
+  <polygon points="440,414 470,362 500,362 456,414" fill="#FFFFFF" opacity="0.5"/>
+  <line x1="436" y1="360" x2="528" y2="360" stroke="#8FA0B1" stroke-width="2"/>
+
+  <!-- Панель электрооборудования -->
+  <rect x="668" y="336" width="204" height="240" rx="4" fill="url(#panelG)"/>
+  <rect x="668" y="336" width="204" height="240" rx="4" fill="none" stroke="#9AA6B2" stroke-width="2"/>
+  <!-- Индикаторы -->
+  <g>
+    <circle cx="692" cy="362" r="8" fill="#35B05A"/>
+    <circle cx="718" cy="362" r="8" fill="#F2B705"/>
+    <circle cx="744" cy="362" r="8" fill="#E0453A"/>
+    <circle cx="692" cy="362" r="3" fill="#FFFFFF" opacity="0.6"/>
+    <circle cx="718" cy="362" r="3" fill="#FFFFFF" opacity="0.6"/>
+    <circle cx="744" cy="362" r="3" fill="#FFFFFF" opacity="0.6"/>
+  </g>
+  <!-- Пластина с маркировкой -->
+  <rect x="692" y="388" width="86" height="44" rx="4" fill="#F5F7FA" stroke="#AEBAC6" stroke-width="1.5"/>
+  <text x="735" y="407" text-anchor="middle" font-size="15" font-weight="bold" fill="#4A5A6C">IP54</text>
+  <text x="735" y="424" text-anchor="middle" font-size="11" fill="#8B97A3">У1 · −40…+40°C</text>
+  <!-- Кабельная плита с вводами -->
+  <rect x="688" y="468" width="168" height="96" rx="6" fill="#2E3B4A"/>
+  <g>
+    <g stroke="#8FA0B1" stroke-width="3" fill="none">
+      <circle cx="716" cy="498" r="13"/>
+      <circle cx="768" cy="498" r="13"/>
+      <circle cx="820" cy="498" r="13"/>
+      <circle cx="716" cy="544" r="13"/>
+      <circle cx="768" cy="544" r="13"/>
+      <circle cx="820" cy="544" r="13"/>
+    </g>
+    <g fill="#101820">
+      <circle cx="716" cy="498" r="5"/>
+      <circle cx="768" cy="498" r="5"/>
+      <circle cx="820" cy="498" r="5"/>
+      <circle cx="716" cy="544" r="5"/>
+      <circle cx="768" cy="544" r="5"/>
+      <circle cx="820" cy="544" r="5"/>
+    </g>
+  </g>
+  <!-- Замок панели -->
+  <rect x="844" y="540" width="22" height="22" rx="5" fill="#24313F"/>
+  <circle cx="855" cy="551" r="5" fill="#8FA0B1"/>
+  <!-- Кнопки -->
+  <rect x="780" y="380" width="30" height="22" rx="5" fill="#E0453A"/>
+  <rect x="816" y="380" width="30" height="22" rx="5" fill="#35B05A"/>
+  <rect x="852" y="380" width="14" height="22" rx="4" fill="#35B05A"/>
+
+  <!-- Светоотражение на корпусе -->
+  <rect x="334" y="304" width="18" height="282" fill="#FFFFFF" opacity="0.22"/>
+  <rect x="336" y="304" width="5" height="282" fill="#FFFFFF" opacity="0.35"/>
+</svg>
