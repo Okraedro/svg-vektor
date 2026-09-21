@@ -1,0 +1,255 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <linearGradient id="bgG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F4F7FA"/>
+      <stop offset="1" stop-color="#DDE5ED"/>
+    </linearGradient>
+    <radialGradient id="bgGlow" cx="0.5" cy="0.45" r="0.55">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bodyG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#C3CCD6"/>
+      <stop offset="0.35" stop-color="#E8EDF2"/>
+      <stop offset="0.7" stop-color="#D5DCE4"/>
+      <stop offset="1" stop-color="#ADB8C4"/>
+    </linearGradient>
+    <linearGradient id="sideG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#87939F"/>
+      <stop offset="1" stop-color="#A6B1BC"/>
+    </linearGradient>
+    <linearGradient id="topG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F4F7FA"/>
+      <stop offset="1" stop-color="#C9D2DB"/>
+    </linearGradient>
+    <linearGradient id="glassG" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#BFE0EF"/>
+      <stop offset="0.5" stop-color="#EAF5FB"/>
+      <stop offset="1" stop-color="#A3CCE0"/>
+    </linearGradient>
+    <linearGradient id="glowG" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FFB84D" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#FFB84D" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="rollG" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FF8A2A"/>
+      <stop offset="1" stop-color="#E06400"/>
+    </linearGradient>
+    <filter id="softShadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+    <filter id="itemShadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+    <clipPath id="paneClip">
+      <rect x="320" y="140" width="560" height="320" rx="24"/>
+    </clipPath>
+  </defs>
+
+  <!-- Фон -->
+  <rect width="1200" height="800" fill="url(#bgG)"/>
+  <rect width="1200" height="800" fill="url(#bgGlow)"/>
+
+  <!-- Декоративная сетка пола -->
+  <g stroke="#B9C4CE" stroke-opacity="0.3" stroke-width="1">
+    <line x1="0" y1="700" x2="1200" y2="700"/>
+    <line x1="0" y1="740" x2="1200" y2="740" stroke-opacity="0.14"/>
+    <line x1="780" y1="0" x2="690" y2="800" stroke-opacity="0.1"/>
+    <line x1="1020" y1="0" x2="1000" y2="800" stroke-opacity="0.1"/>
+    <line x1="1260" y1="0" x2="1310" y2="800" stroke-opacity="0.1"/>
+  </g>
+
+  <!-- Декоративные круги -->
+  <circle cx="1050" cy="150" r="110" fill="none" stroke="#FFFFFF" stroke-opacity="0.5" stroke-width="2"/>
+  <circle cx="1050" cy="150" r="86" fill="none" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="1"/>
+  <circle cx="160" cy="640" r="130" fill="none" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="2"/>
+  <circle cx="160" cy="640" r="102" fill="none" stroke="#FFFFFF" stroke-opacity="0.25" stroke-width="1"/>
+
+  <!-- ===== СТЕКЛО «ТРИПЛЕКС» ===== -->
+  <ellipse cx="610" cy="512" rx="300" ry="26" fill="#26323F" opacity="0.13" filter="url(#itemShadow)"/>
+  <g transform="rotate(-4 600 300)">
+    <rect x="320" y="140" width="560" height="320" rx="24" fill="url(#glassG)"/>
+    <g clip-path="url(#paneClip)">
+      <rect x="348" y="168" width="504" height="264" rx="12" fill="#FFFFFF" opacity="0.35"/>
+      <rect x="356" y="176" width="488" height="248" rx="10" fill="none" stroke="#8FB6C9" stroke-width="2" stroke-dasharray="12 10" opacity="0.75"/>
+      <polygon points="352,196 660,150 690,158 384,204" fill="#FFFFFF" opacity="0.4"/>
+      <polygon points="700,152 742,146 748,158 706,164" fill="#FFFFFF" opacity="0.3"/>
+      <rect x="332" y="150" width="536" height="8" rx="4" fill="#FFFFFF" opacity="0.55"/>
+      <path d="M320,436 H880 V456 Q880,480 856,480 H344 Q320,480 320,456 Z" fill="#24313F"/>
+      <line x1="322" y1="434" x2="878" y2="434" stroke="#FFFFFF" stroke-opacity="0.5" stroke-width="2"/>
+    </g>
+    <!-- Маркировка безопасности -->
+    <rect x="812" y="418" width="46" height="32" rx="6" fill="#ED760E"/>
+    <text x="835" y="440" text-anchor="middle" font-size="17" font-weight="bold" fill="#FFFFFF">3+3</text>
+    <rect x="322" y="424" width="76" height="26" rx="5" fill="#F5F7FA" stroke="#AEBAC6" stroke-width="1.5"/>
+    <text x="360" y="442" text-anchor="middle" font-size="12" font-weight="bold" fill="#4A5A6C">Триплекс</text>
+  </g>
+
+  <!-- ===== РУЛОН УПЛОТНИТЕЛЯ ===== -->
+  <ellipse cx="238" cy="292" rx="78" ry="14" fill="#26323F" opacity="0.14" filter="url(#itemShadow)"/>
+  <g>
+    <circle cx="238" cy="205" r="64" fill="url(#rollG)"/>
+    <circle cx="238" cy="205" r="45" fill="#C45500"/>
+    <circle cx="238" cy="205" r="45" fill="none" stroke="#A84400" stroke-width="3" stroke-dasharray="5 9" opacity="0.7"/>
+    <circle cx="238" cy="205" r="26" fill="#F7D9A8"/>
+    <circle cx="238" cy="205" r="12" fill="#E8B878"/>
+    <!-- Хвост уплотнителя -->
+    <path d="M238 141 C 290 133, 322 162, 316 196 L 296 194 C 300 172, 278 154, 244 159 Z" fill="#FF9A3D" stroke="#E06400" stroke-width="2"/>
+    <!-- Блик -->
+    <ellipse cx="216" cy="178" rx="20" ry="12" fill="#FFFFFF" opacity="0.35" transform="rotate(-30 216 178)"/>
+  </g>
+
+  <!-- ===== ШЕСТИГРАННЫЙ КЛЮЧ ===== -->
+  <ellipse cx="148" cy="268" rx="60" ry="10" fill="#26323F" opacity="0.12" filter="url(#itemShadow)"/>
+  <g>
+    <path d="M148 172 L148 246 L206 246" fill="none" stroke="#6B7B8C" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M148 172 L148 246 L206 246" fill="none" stroke="#93A1B0" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="141" y="192" width="14" height="30" rx="6" fill="#ED760E"/>
+    <rect x="143" y="194" width="4" height="26" rx="2" fill="#FF9A3D"/>
+  </g>
+
+  <!-- ===== РАБОЧАЯ ЛАМПА ===== -->
+  <circle cx="1010" cy="235" r="95" fill="url(#glowG)"/>
+  <ellipse cx="1048" cy="368" rx="52" ry="10" fill="#26323F" opacity="0.13" filter="url(#itemShadow)"/>
+  <g>
+    <!-- Кронштейн -->
+    <rect x="1028" y="288" width="52" height="16" rx="8" fill="#5C6B7A" transform="rotate(38 1054 296)"/>
+    <rect x="1052" y="336" width="44" height="14" rx="7" fill="#3A4958"/>
+    <!-- Голова лампы -->
+    <rect x="958" y="188" width="104" height="94" rx="20" fill="#3A4958"/>
+    <rect x="962" y="192" width="40" height="86" rx="14" fill="#4A5A6C"/>
+    <circle cx="1010" cy="235" r="34" fill="#F2B705"/>
+    <circle cx="1010" cy="235" r="20" fill="#FFD873"/>
+    <ellipse cx="1002" cy="224" rx="7" ry="5" fill="#FFFFFF" opacity="0.7" transform="rotate(-25 1002 224)"/>
+    <!-- Кабель -->
+    <path d="M962 214 C 930 214, 930 252, 908 252" fill="none" stroke="#2E3B4A" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="956" cy="220" r="4" fill="#8FA0B1"/>
+  </g>
+
+  <!-- ===== КРЕПЁЖ (болты, шайбы, гайки) ===== -->
+  <g>
+    <!-- Болт крупный -->
+    <ellipse cx="1000" cy="438" rx="30" ry="8" fill="#26323F" opacity="0.14" filter="url(#itemShadow)"/>
+    <rect x="994" y="390" width="12" height="36" rx="3" fill="#AEBAC6"/>
+    <rect x="994" y="390" width="12" height="36" rx="3" fill="none" stroke="#8B97A3" stroke-width="1"/>
+    <line x1="994" y1="402" x2="1006" y2="402" stroke="#8B97A3" stroke-width="1.5"/>
+    <line x1="994" y1="412" x2="1006" y2="412" stroke="#8B97A3" stroke-width="1.5"/>
+    <circle cx="1000" cy="380" r="18" fill="#8E9AA6"/>
+    <circle cx="1000" cy="380" r="18" fill="none" stroke="#5C6B7A" stroke-width="2"/>
+    <circle cx="1000" cy="380" r="8" fill="none" stroke="#6B7B8C" stroke-width="2"/>
+    <!-- Шайба -->
+    <circle cx="944" cy="404" r="16" fill="none" stroke="#8E9AA6" stroke-width="7"/>
+    <circle cx="944" cy="404" r="4" fill="#E8EDF2"/>
+    <!-- Гайка -->
+    <polygon points="1062,398 1076,406 1076,422 1062,430 1048,422 1048,406" fill="#5C6B7A"/>
+    <polygon points="1062,398 1076,406 1076,422 1062,430 1048,422 1048,406" fill="none" stroke="#48576A" stroke-width="2"/>
+    <circle cx="1062" cy="414" r="5" fill="#3A4958"/>
+    <!-- Резиновый грибок-заглушка -->
+    <circle cx="916" cy="452" r="13" fill="#2E3B4A"/>
+    <circle cx="916" cy="452" r="6" fill="#101820"/>
+  </g>
+
+  <!-- ===== МОНОБЛОК ОБОГРЕВАТЕЛЬ ===== -->
+  <ellipse cx="900" cy="712" rx="215" ry="24" fill="#26323F" opacity="0.14" filter="url(#itemShadow)"/>
+  <g>
+    <!-- Опоры -->
+    <rect x="738" y="698" width="46" height="16" rx="5" fill="#5C6B7A"/>
+    <rect x="1024" y="698" width="46" height="16" rx="5" fill="#5C6B7A"/>
+    <!-- Корпус -->
+    <polygon points="1110,520 1128,496 1128,676 1110,700" fill="#B4BEC8"/>
+    <rect x="690" y="520" width="420" height="180" rx="18" fill="#F7F9FB"/>
+    <rect x="690" y="520" width="420" height="180" rx="18" fill="none" stroke="#C7D0DA" stroke-width="2"/>
+    <polygon points="690,520 1110,520 1128,496 708,496" fill="url(#topG)"/>
+    <line x1="692" y1="522" x2="1108" y2="522" stroke="#FFFFFF" stroke-width="2" stroke-opacity="0.8"/>
+    <!-- Акцентная полоса -->
+    <rect x="714" y="682" width="372" height="5" rx="2.5" fill="#ED760E" opacity="0.85"/>
+    <!-- Вентилятор -->
+    <circle cx="792" cy="610" r="54" fill="#EFF3F7" stroke="#AEBAC6" stroke-width="2.5"/>
+    <g stroke="#AEBAC6" stroke-width="4" opacity="0.7">
+      <ellipse cx="792" cy="610" rx="42" ry="10"/>
+      <ellipse cx="792" cy="610" rx="42" ry="10" transform="rotate(30 792 610)"/>
+      <ellipse cx="792" cy="610" rx="42" ry="10" transform="rotate(60 792 610)"/>
+      <ellipse cx="792" cy="610" rx="42" ry="10" transform="rotate(90 792 610)"/>
+      <ellipse cx="792" cy="610" rx="42" ry="10" transform="rotate(120 792 610)"/>
+      <ellipse cx="792" cy="610" rx="42" ry="10" transform="rotate(150 792 610)"/>
+    </g>
+    <circle cx="792" cy="610" r="11" fill="#8FA0B1"/>
+    <circle cx="792" cy="610" r="4" fill="#5C6B7A"/>
+    <!-- Панель управления -->
+    <rect x="896" y="562" width="166" height="88" rx="10" fill="#E8EDF2" stroke="#C7D0DA" stroke-width="1.5"/>
+    <rect x="906" y="576" width="72" height="24" rx="4" fill="#2E3B4A"/>
+    <rect x="914" y="584" width="10" height="8" rx="2" fill="#53D769"/>
+    <rect x="930" y="584" width="10" height="8" rx="2" fill="#53D769" opacity="0.55"/>
+    <rect x="948" y="584" width="8" height="8" rx="2" fill="#53D769" opacity="0.3"/>
+    <circle cx="918" cy="624" r="9" fill="#E0453A"/>
+    <circle cx="944" cy="624" r="9" fill="#B8C4CF"/>
+    <circle cx="970" cy="624" r="9" fill="#B8C4CF"/>
+    <circle cx="996" cy="624" r="9" fill="#35B05A"/>
+    <circle cx="1022" cy="593" r="10" fill="#F5F7FA" stroke="#AEBAC6" stroke-width="2"/>
+    <line x1="1022" y1="587" x2="1022" y2="593" stroke="#4A5A6C" stroke-width="2.5"/>
+    <circle cx="1048" cy="624" r="5" fill="#35B05A"/>
+    <!-- Блик -->
+    <rect x="700" y="528" width="26" height="164" rx="13" fill="#FFFFFF" opacity="0.5"/>
+  </g>
+
+  <!-- ===== КОМАНДОКОНТРОЛЛЕР ===== -->
+  <ellipse cx="305" cy="702" rx="180" ry="22" fill="#26323F" opacity="0.14" filter="url(#itemShadow)"/>
+  <g>
+    <!-- Корпус -->
+    <polygon points="470,530 498,502 498,667 470,695" fill="url(#sideG)"/>
+    <rect x="150" y="530" width="320" height="165" rx="16" fill="url(#bodyG)"/>
+    <rect x="150" y="530" width="320" height="165" rx="16" fill="none" stroke="#9AA6B2" stroke-width="2"/>
+    <polygon points="150,530 470,530 498,502 178,502" fill="url(#topG)"/>
+    <line x1="152" y1="532" x2="468" y2="532" stroke="#FFFFFF" stroke-width="2" stroke-opacity="0.8"/>
+    <!-- Левый рычаг -->
+    <g transform="rotate(-11 255 545)">
+      <circle cx="255" cy="548" r="20" fill="#24313F"/>
+      <rect x="248" y="502" width="14" height="48" rx="4" fill="#5C6B7A"/>
+      <rect x="234" y="458" width="42" height="50" rx="10" fill="#ED760E"/>
+      <path d="M234 492 Q255 506 276 492 L276 508 Q255 518 234 508 Z" fill="#C45500"/>
+      <rect x="236" y="460" width="10" height="34" rx="5" fill="#FF9A3D"/>
+    </g>
+    <!-- Правый рычаг -->
+    <g transform="rotate(11 345 545)">
+      <circle cx="345" cy="548" r="20" fill="#24313F"/>
+      <rect x="338" y="502" width="14" height="48" rx="4" fill="#5C6B7A"/>
+      <rect x="324" y="458" width="42" height="50" rx="10" fill="#2E3B4A"/>
+      <path d="M324 492 Q345 506 366 492 L366 508 Q345 518 324 508 Z" fill="#101820"/>
+      <rect x="326" y="460" width="10" height="34" rx="5" fill="#4A5A6C"/>
+    </g>
+    <!-- Переключатели -->
+    <rect x="390" y="524" width="9" height="26" rx="4" fill="#3A4958"/>
+    <rect x="417" y="524" width="9" height="26" rx="4" fill="#3A4958"/>
+    <!-- Пластина с маркировкой -->
+    <rect x="296" y="640" width="78" height="42" rx="4" fill="#F5F7FA" stroke="#AEBAC6" stroke-width="1.5"/>
+    <text x="335" y="662" text-anchor="middle" font-size="19" font-weight="bold" fill="#4A5A6C">ККТ</text>
+    <text x="335" y="677" text-anchor="middle" font-size="10" fill="#8B97A3">серия</text>
+    <circle cx="304" cy="648" r="2.5" fill="#AEBAC6"/>
+    <circle cx="366" cy="648" r="2.5" fill="#AEBAC6"/>
+    <circle cx="304" cy="674" r="2.5" fill="#AEBAC6"/>
+    <circle cx="366" cy="674" r="2.5" fill="#AEBAC6"/>
+    <!-- Индикаторы -->
+    <circle cx="416" cy="660" r="8" fill="#35B05A"/>
+    <circle cx="440" cy="660" r="8" fill="#F2B705"/>
+    <circle cx="464" cy="660" r="8" fill="#E0453A"/>
+    <circle cx="416" cy="660" r="3" fill="#FFFFFF" opacity="0.6"/>
+    <circle cx="440" cy="660" r="3" fill="#FFFFFF" opacity="0.6"/>
+    <circle cx="464" cy="660" r="3" fill="#FFFFFF" opacity="0.6"/>
+    <!-- Блик -->
+    <rect x="158" y="538" width="22" height="150" rx="11" fill="#FFFFFF" opacity="0.4"/>
+  </g>
+
+  <!-- ===== РАССЫПАННЫЙ МЕЛКИЙ КРЕПЁЖ ===== -->
+  <g>
+    <ellipse cx="560" cy="568" rx="22" ry="6" fill="#26323F" opacity="0.12" filter="url(#itemShadow)"/>
+    <polygon points="560,550 570,556 570,568 560,574 550,568 550,556" fill="#8E9AA6" stroke="#5C6B7A" stroke-width="1.5"/>
+    <ellipse cx="742" cy="512" rx="18" ry="5" fill="#26323F" opacity="0.12" filter="url(#itemShadow)"/>
+    <polygon points="742,497 750,502 750,511 742,516 734,511 734,502" fill="#8E9AA6" stroke="#5C6B7A" stroke-width="1.5"/>
+    <ellipse cx="512" cy="730" rx="18" ry="5" fill="#26323F" opacity="0.12" filter="url(#itemShadow)"/>
+    <polygon points="512,715 520,720 520,729 512,734 504,729 504,720" fill="#8E9AA6" stroke="#5C6B7A" stroke-width="1.5"/>
+    <!-- Маленькая шайба -->
+    <circle cx="688" cy="536" r="11" fill="none" stroke="#8E9AA6" stroke-width="5"/>
+    <!-- Прокладка-кольцо -->
+    <circle cx="826" cy="470" r="10" fill="none" stroke="#2E3B4A" stroke-width="7" opacity="0.9"/>
+  </g>
+</svg>
